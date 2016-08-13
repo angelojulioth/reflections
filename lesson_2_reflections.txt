@@ -8,3 +8,6 @@
   the files and folders in the current directory, the repository is the set of all the files, folders and
   sub-folders used. The staging area is useful since it makes it possible to add certain set of files to one
   commit, the files used for the commit can be set in a logical way.
+
+  The working directory: files modified that are not yet added to the staging area.
+  The staging area: files added to a commit (files to be commited)
