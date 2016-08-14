@@ -11,3 +11,29 @@
 
   The working directory: files modified that are not yet added to the staging area.
   The staging area: files added to a commit (files to be commited)
+
+3.How can you use the staging are to make sure you have one commit per logical change?
+  In this case, the staging area offers a good way to commit different files involved per logical
+  change, multiple files can be added to the staging area, if those files are related to a logical
+  change, then the files should be in the staging are and finally commited.
+
+4.What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+  Branches can be quite helpful when you want to try something with your code but not mess with the original, if
+  a new characteristic needs to be added, but it is something experimental, a branch could be helpful, a snapshot of
+  the branch you're into would be cloned into a new one, the new one would be a branch of the original branch, this
+  is a helpful thing since branches could be merged into a parent branch in the future.
+
+5.How do the diagrams help you visualize the branch structure?
+  The handmade diagrams are great because you can think how exactly all the branch and commits interact within the
+  repository.
+
+6.What is the result of merging two branches together? Why do we represent it in the diagram we do?
+  The result of mergin to branches together is that the modifications done in one branch merge within the branch
+  we are mergin to, it was represented in the diagram showed by the instructor since it's easier to visualize
+  everything.
+ 
+7.What are the pros and cons of Git's automatic merging vs. doing merges manually?
+  When git finds merges conflicts, merging can't be done automatically, doing merging manually is great since
+  the conflicts are solved and the best aproach of the code done from a branch is finally implemented.
+
+
