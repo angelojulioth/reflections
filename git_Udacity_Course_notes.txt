@@ -1,0 +1,92 @@
+Instructoras - Curso Github en Udacity:
+	Sarah Spikes: github username -> salogel42
+	Caroline Buckey: github username -> cbuckey-uda
+
+-------------------------------------------------------------------------------------------------------------
+PENDIENTES:
+	*Mirar vídeos y leer sobre branch mergin y conflictos al hacer branch merging.
+	*Aprender a lidiar con la situación expuesta anteriormente.
+	*Investigar sobre password catching, esto sirve con github, de esta forma cuando git se comunica con
+	 github, el pass y el nombre del usuario no se tiene que volver a tipear.
+-------------------------------------------------------------------------------------------------------------
+
+
+*************************************************************************************************************
+Establecer el editor por defecto:
+	git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
+Los siguientes comandos se explicarán después en el curso[PENDIENTE INVESTIGAR]:
+	git config --global push.default upstream
+	git config --global merge.conflictstyle diff3
+*************************************************************************************************************
+
+
+-------------------------------------------------------------------------------------------------------------
+LINKS PROPORCIONADOS PARA INVESTIGAR [RECURSOS OPCIONALES DEL CURSO]
+
+Guía de estilos y convenciones al escribir descripciones de commits (Link proporcionado en el curso):
+	http://udacity.github.io/git-styleguide/
+Información sobre los componentes internos de git y su funcionamiento en general, el siguiente link fue
+proporcionado en el curso como una sugerencia en caso de que el alumno quiera investigar sobre cómo se
+creaba un id único para cada "commit" que se hace:
+	https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
+-------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------
+[RECURSOS OPCIONALES DEL CURSO]
+
+Herramientas sugeridas en el curso para la creación de diagramas:
+	https://www.gliffy.com/
+	http://yuml.me/diagram/activity/draw
+-------------------------------------------------------------------------------------------------------------
+
+
+
+Para agregar una conexión remota con github se escriben los comandos:
+	git remote add origin [link https del repositorio creado en github]
+	En este caso origin es simplemente el nombre que se le pone al servidor remoto, por
+	convención se lo nombra "origin", puesto a que de ahí se hace fetch y push.
+	El nombre "origin" simplemente es un identificador que se usa para el repo remoto.
+También se puede remover el identificador "origin"(o el nombre que se haya usado) para no tener
+conexión con el repositorio remoto con ese identificador. Esto se hace con el siguiente comando:
+	git remote remove origin
+	En este caso se sigue el siguiente formato: git remote remove [identificador del repo remoto]
+	Así es como ya no se tendría conexión al repositorio remoto.
+Para ver un la información de los servidores remotos con los que se realiza el fetch y el push se
+escribe el comando:
+	git remote -v
+	En este caso -v es el argumento para "verbose" osea para mostrar la información sobre el
+	servidor remoto con el que hemos hecho la conexión.
+Para clonar un repositorio remoto se usa el comando:
+	git clone [enlance al repositorio remoto]
+	En este caso se clonaría el repositorio remoto en nuestro "cwd"(current working directory)
+	directorio de trabajo actual, SE DEBE TOMAR EN CUENTA QUE -> al clonar un repositorio
+	remoto en local, por defecto/automáticamente se crea una conexión con el repositorio remoto
+	que mantiene el nombre que se usa por convención para una conexión con un repositorio
+	remoto, esta conexión usa el identificador "origin" por defecto, para comprobarlo se puede
+	correr el comando "git remote -v[erbose]" <- (excluir lo escrito en las llaves). Esto debería
+	de dar un output con una información sobre el repositorio remoto y desde dónde se hace el
+	"fetch" y a dónde se hace el "push".
+	[PENDIENTE INVESTIGAR] -> La razón por la que existen conexión remota separada para hacer
+				  "fetch" y "pull" aunque por defecto apuntan a la misma conexión
+				  remota.
+
+NOTA: Cuando se clona un repositorio remoto a un repositorio local, en el repo clonado que está
+en local se crea automáticamente una conexión remota con el repositorio remoto, la conexión usa
+el identificador que se usa por convención, la conexión hacía el repo remoto se llama "origin".
+
+NOTA: No se puede usar simplemente el comando "cp" para copiar un repo local a otra ubicación en
+local, existe un problema con los metadatos [PENDIENTE INVESTIGAR EL PROBLEMA] y el repositorio
+no queda copiado correctamente, se puede usar el comando "scp" o "secure copy" pero al parecer
+se tendría un problema con los commits [PENDIENTE INVESTIGAR EL PROBLEMA], lo más indicando es
+usar directamente el comando "git clone" para clonar un repo local en otra ubicación local.
+
+
+Para empujar una rama de nuestro repo local hacia el repo remoto "origin" se escribe el comando:
+	git push origin master
+	En este caso se sigue el formato de git push [nombre del repo remoto] [branch a empujar]
+En caso de que nuestro repositorio no se encuentre al día en relación al repositorio remoto, se
+debe hacer lo siguiente para "tirar" los cambios del repositorio remoto a nuestro repositorio local:
+	git pull origin master
+	En este caso se sigue el formato:
+	git pull [identificador repo remoto] [branch que se desea tirar del repo remoto al local]
