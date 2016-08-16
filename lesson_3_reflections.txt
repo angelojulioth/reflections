@@ -24,3 +24,7 @@
   easier to see the changes made that are avaliable in the remote repo compared to the ones that are local and
   not yet avaliable for the remote, the other advantange is to be able to merge the copies of the remote branches
   with the local branches to later push the merged version after all the merge conflicts are solved.
+
+5.How would you collaborate using Git or GitHub? What would be easier, and what would be harder?
+  Collaboration can be done with more productivity by using git and github to keep a remote repository where a
+  team of collaborators could participate and submit their changes.
