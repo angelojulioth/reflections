@@ -2,6 +2,8 @@ Instructoras - Curso Github en Udacity:
 	Sarah Spikes: github username -> salogel42
 	Caroline Buckey: github username -> cbuckey-uda
 
+Foro del curso: https://discussions.udacity.com/c/standalone-courses/how-to-use-git-and-github
+
 -------------------------------------------------------------------------------------------------------------------
 PENDIENTES:
 	*Investigar el comando "git diff" para ver las diferencias en los archivos entre commits.
