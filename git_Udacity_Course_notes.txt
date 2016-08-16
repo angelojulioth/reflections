@@ -19,6 +19,7 @@ PENDIENTES:
 	*Aprender a lidiar con la situación expuesta anteriormente.
 	*Investigar sobre password catching, esto sirve con github, de esta forma cuando git se comunica con
 	 github, el pass y el nombre del usuario no se tiene que volver a tipear.
+	*Investigar fast-forward-merge.
 -------------------------------------------------------------------------------------------------------------------
 
 
