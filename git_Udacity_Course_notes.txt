@@ -1,4 +1,4 @@
-﻿Instructoras - Curso Github en Udacity:
+Instructoras - Curso Github en Udacity:
 	Sarah Spikes: github username -> salogel42
 	Caroline Buckey: github username -> cbuckey-uda
 
