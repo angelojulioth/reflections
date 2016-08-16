@@ -20,6 +20,7 @@ PENDIENTES:
 	*Investigar sobre password catching, esto sirve con github, de esta forma cuando git se comunica con
 	 github, el pass y el nombre del usuario no se tiene que volver a tipear.
 	*Investigar fast-forward-merge.
+	*Investigar cambios conflictivos en commits producidos por tener diferentes colaboradores en un repo.
 -------------------------------------------------------------------------------------------------------------------
 
 
