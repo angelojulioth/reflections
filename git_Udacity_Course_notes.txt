@@ -2,25 +2,25 @@ Instructoras - Curso Github en Udacity:
 	Sarah Spikes: github username -> salogel42
 	Caroline Buckey: github username -> cbuckey-uda
 
--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 PENDIENTES:
 	*Mirar vídeos y leer sobre branch mergin y conflictos al hacer branch merging.
 	*Aprender a lidiar con la situación expuesta anteriormente.
 	*Investigar sobre password catching, esto sirve con github, de esta forma cuando git se comunica con
 	 github, el pass y el nombre del usuario no se tiene que volver a tipear.
--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 
-*************************************************************************************************************
+*******************************************************************************************************************
 Establecer el editor por defecto:
 	git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
 Los siguientes comandos se explicarán después en el curso[PENDIENTE INVESTIGAR]:
 	git config --global push.default upstream
 	git config --global merge.conflictstyle diff3
-*************************************************************************************************************
+*******************************************************************************************************************
 
 
--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 LINKS PROPORCIONADOS PARA INVESTIGAR [RECURSOS OPCIONALES DEL CURSO]
 
 Guía de estilos y convenciones al escribir descripciones de commits (Link proporcionado en el curso):
@@ -29,16 +29,16 @@ Información sobre los componentes internos de git y su funcionamiento en general
 proporcionado en el curso como una sugerencia en caso de que el alumno quiera investigar sobre cómo se
 creaba un id único para cada "commit" que se hace:
 	https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 
--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 [RECURSOS OPCIONALES DEL CURSO]
 
 Herramientas sugeridas en el curso para la creación de diagramas:
 	https://www.gliffy.com/
 	http://yuml.me/diagram/activity/draw
--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 
 
