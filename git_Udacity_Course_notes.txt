@@ -1,4 +1,4 @@
-Instructoras - Curso Github en Udacity:
+ï»¿Instructoras - Curso Github en Udacity:
 	Sarah Spikes: github username -> salogel42
 	Caroline Buckey: github username -> cbuckey-uda
 
@@ -7,16 +7,16 @@ Foro del curso: https://discussions.udacity.com/c/standalone-courses/how-to-use-
 -------------------------------------------------------------------------------------------------------------------
 PENDIENTES:
 	*Investigar el comando "git diff" para ver las diferencias en los archivos entre commits.
-	*Investigar cómo usar "git diff" para ver diferencias de cambios entre las áreas de trabajo git
+	*Investigar cÃ³mo usar "git diff" para ver diferencias de cambios entre las Ã¡reas de trabajo git
 	 "CURRENT WORKING DIRECTORY"(que se refiere a los archivos modificados en el repositorio actualmente y
 	 que no han sido agregados a la "staging area"), "STAGING AREA"(que se refiere a los archivos modificados
-	 que se añaden a "una cola" de archivos que serán parte de el siguiente commit pero que aún no se han
-	 agregado al commit), y al área de "COMMIT"(que se refiere al último commit ya realizado en el área de
-	 trabajo). El propósito de aprender a usar git diff para comparar cambios entre las distintas áreas de
-	 trabajo en git, es de revisar y estar concientes de los cambios realizados en dichas áreas para saber
-	 cómo se debería proceder con los cambios realizados.
-	*Mirar vídeos y leer sobre branch mergin y conflictos al hacer branch merging.
-	*Aprender a lidiar con la situación expuesta anteriormente.
+	 que se aÃ±aden a "una cola" de archivos que serÃ¡n parte de el siguiente commit pero que aÃºn no se han
+	 agregado al commit), y al Ã¡rea de "COMMIT"(que se refiere al Ãºltimo commit ya realizado en el Ã¡rea de
+	 trabajo). El propÃ³sito de aprender a usar git diff para comparar cambios entre las distintas Ã¡reas de
+	 trabajo en git, es de revisar y estar concientes de los cambios realizados en dichas Ã¡reas para saber
+	 cÃ³mo se deberÃ­a proceder con los cambios realizados.
+	*Mirar vÃ­deos y leer sobre branch mergin y conflictos al hacer branch merging.
+	*Aprender a lidiar con la situaciÃ³n expuesta anteriormente.
 	*Investigar sobre password catching, esto sirve con github, de esta forma cuando git se comunica con
 	 github, el pass y el nombre del usuario no se tiene que volver a tipear.
 -------------------------------------------------------------------------------------------------------------------
@@ -25,7 +25,7 @@ PENDIENTES:
 *******************************************************************************************************************
 Establecer el editor por defecto:
 	git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
-Los siguientes comandos se explicarán después en el curso[PENDIENTE INVESTIGAR]:
+Los siguientes comandos se explicarÃ¡n despuÃ©s en el curso[PENDIENTE INVESTIGAR]:
 	git config --global push.default upstream
 	git config --global merge.conflictstyle diff3
 *******************************************************************************************************************
@@ -34,11 +34,11 @@ Los siguientes comandos se explicarán después en el curso[PENDIENTE INVESTIGAR]:
 -------------------------------------------------------------------------------------------------------------------
 LINKS PROPORCIONADOS PARA INVESTIGAR [RECURSOS OPCIONALES DEL CURSO]
 
-Guía de estilos y convenciones al escribir descripciones de commits (Link proporcionado en el curso):
+GuÃ­a de estilos y convenciones al escribir descripciones de commits (Link proporcionado en el curso):
 	http://udacity.github.io/git-styleguide/
-Información sobre los componentes internos de git y su funcionamiento en general, el siguiente link fue
-proporcionado en el curso como una sugerencia en caso de que el alumno quiera investigar sobre cómo se
-creaba un id único para cada "commit" que se hace:
+InformaciÃ³n sobre los componentes internos de git y su funcionamiento en general, el siguiente link fue
+proporcionado en el curso como una sugerencia en caso de que el alumno quiera investigar sobre cÃ³mo se
+creaba un id Ãºnico para cada "commit" que se hace:
 	https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
 -------------------------------------------------------------------------------------------------------------------
 
@@ -46,7 +46,7 @@ creaba un id único para cada "commit" que se hace:
 -------------------------------------------------------------------------------------------------------------------
 [RECURSOS OPCIONALES DEL CURSO]
 
-Herramientas sugeridas en el curso para la creación de diagramas:
+Herramientas sugeridas en el curso para la creaciÃ³n de diagramas:
 	https://www.gliffy.com/
 	http://yuml.me/diagram/activity/draw
 -------------------------------------------------------------------------------------------------------------------
@@ -55,77 +55,77 @@ Herramientas sugeridas en el curso para la creación de diagramas:
 Para ver las branches actuales se usa el comando:
 	git branch
 	En este caso se muestra en el output las branches del repositorio y un asterisco en la branch que
-	actualmente tendría "checkout", osea, la branch en la que se está trabajando en el momento.
+	actualmente tendrÃ­a "checkout", osea, la branch en la que se estÃ¡ trabajando en el momento.
 Para cambiar de branch se usa el comando:
 	git checkout [nombre de la branch]
-	En este caso se cambiaría al espacio de trabajo de la branch a la que se le hace checkout, se entraría
-	a la branch y se tendrían los cambios/commits realizados a dicha branch.
-Para ver los commits realizados con su respectiva información e ids se usa el el comando:
+	En este caso se cambiarÃ­a al espacio de trabajo de la branch a la que se le hace checkout, se entrarÃ­a
+	a la branch y se tendrÃ­an los cambios/commits realizados a dicha branch.
+Para ver los commits realizados con su respectiva informaciÃ³n e ids se usa el el comando:
 	git log
-	En este caso se obtendría la información del commit y un id único para el commit.
+	En este caso se obtendrÃ­a la informaciÃ³n del commit y un id Ãºnico para el commit.
 Para dar un vistazo a un commit anterior se usa el comando:
 	git checkout [id del commit]
-	En este caso se cambiaría al espacio de trabajo del commit elegido. NOTA: Hay que tener en cuenta un
-	problema en este caso, existe algo llamado "HEAD"[INVESTIGACIÓN PENDIENDE SOBRE ESTO] que apunta
-	al último commit realizado en una determinada branch, cuando se hace checkout a un commit anterior
-	se muestra un mensaje de advertencia de "DETACHED FROM HEAD" que significa que se está trabajando
-	en un commit que no es "HEAD" y que los cambios hechos en el commit al que se cambió podrían perderse.
-	Ej: Si se hace un "git checkout branch" los cambios realizados en el commit viejo en el que estámos
+	En este caso se cambiarÃ­a al espacio de trabajo del commit elegido. NOTA: Hay que tener en cuenta un
+	problema en este caso, existe algo llamado "HEAD"[INVESTIGACIÃ“N PENDIENDE SOBRE ESTO] que apunta
+	al Ãºltimo commit realizado en una determinada branch, cuando se hace checkout a un commit anterior
+	se muestra un mensaje de advertencia de "DETACHED FROM HEAD" que significa que se estÃ¡ trabajando
+	en un commit que no es "HEAD" y que los cambios hechos en el commit al que se cambiÃ³ podrÃ­an perderse.
+	Ej: Si se hace un "git checkout branch" los cambios realizados en el commit viejo en el que estÃ¡mos
 	    haciendo checkout se pierden, porque el espacio de trabajo de cada branch siempre apunta en el
-	    último commit realizado "HEAD", se puede imaginar un caso hipotético en el que se hace checkout
-	    a un commit anterior y el estádo del espacio de trabajo pasa a ser "DETACHED HEAD", luego hacemos
-	    cambios y nos olvidamos de que estámos en "DETACHED HEAD" y por alguna razón hacemos "checkout" a
+	    Ãºltimo commit realizado "HEAD", se puede imaginar un caso hipotÃ©tico en el que se hace checkout
+	    a un commit anterior y el estÃ¡do del espacio de trabajo pasa a ser "DETACHED HEAD", luego hacemos
+	    cambios y nos olvidamos de que estÃ¡mos en "DETACHED HEAD" y por alguna razÃ³n hacemos "checkout" a
 	    la misma branch o a otra, entonces los cambios quedan descartados, porque la branch a la que se
-	    cambia siempre apunta a "HEAD", lo que se podría hacer para solucinar esto es crear una nueva
+	    cambia siempre apunta a "HEAD", lo que se podrÃ­a hacer para solucinar esto es crear una nueva
 	    branch y guardar los cambios que se han realizado en la nueva branch, esto se hace en el commit
 	    en estado "DETACHED HEAD", se escribe el commando: git checkout -b <nombre de la nueva branch>
 	    y este comando hace que se cree una nueva branch y que al mismo tiempo se entre al espacio de
-	    trabajo de la misma(el espacio de trabajo de la nueva branch es el commit en el que se esté
-	    trabajando), el comando ya mencionado es una atajo que de otra forma habría necesitado de dos
+	    trabajo de la misma(el espacio de trabajo de la nueva branch es el commit en el que se estÃ©
+	    trabajando), el comando ya mencionado es una atajo que de otra forma habrÃ­a necesitado de dos
 	    comandos "git branch <nombre de la nueva branch> y git checkout <nombre de la nueva branch>"
 	    entonces el comando "git checkout -b <nombre de la nueva branch" crea la nueva branch y hace
 	    checkout hacia la brach al mismo tiempo. Finalmente se hace un commit con los archivos modificados
 	    y de esta forma los cambios no se pierden, los cambios pasan a la nueva branch a la que se tiene
 	    alcance a los cambios por medio de "HEAD".
 
-Para agregar una conexión remota con github se escriben los comandos:
+Para agregar una conexiÃ³n remota con github se escriben los comandos:
 	git remote add origin [link https del repositorio creado en github]
 	En este caso origin es simplemente el nombre que se le pone al servidor remoto, por
-	convención se lo nombra "origin", puesto a que de ahí se hace fetch y push.
+	convenciÃ³n se lo nombra "origin", puesto a que de ahÃ­ se hace fetch y push.
 	El nombre "origin" simplemente es un identificador que se usa para el repo remoto.
-También se puede remover el identificador "origin"(o el nombre que se haya usado) para no tener
-conexión con el repositorio remoto con ese identificador. Esto se hace con el siguiente comando:
+TambiÃ©n se puede remover el identificador "origin"(o el nombre que se haya usado) para no tener
+conexiÃ³n con el repositorio remoto con ese identificador. Esto se hace con el siguiente comando:
 	git remote remove origin
 	En este caso se sigue el siguiente formato: git remote remove [identificador del repo remoto]
-	Así es como ya no se tendría conexión al repositorio remoto.
-Para ver un la información de los servidores remotos con los que se realiza el fetch y el push se
+	AsÃ­ es como ya no se tendrÃ­a conexiÃ³n al repositorio remoto.
+Para ver un la informaciÃ³n de los servidores remotos con los que se realiza el fetch y el push se
 escribe el comando:
 	git remote -v
-	En este caso -v es el argumento para "verbose" osea para mostrar la información sobre el
-	servidor remoto con el que hemos hecho la conexión.
+	En este caso -v es el argumento para "verbose" osea para mostrar la informaciÃ³n sobre el
+	servidor remoto con el que hemos hecho la conexiÃ³n.
 Para clonar un repositorio remoto se usa el comando:
 	git clone [enlance al repositorio remoto]
-	En este caso se clonaría el repositorio remoto en nuestro "cwd"(current working directory)
+	En este caso se clonarÃ­a el repositorio remoto en nuestro "cwd"(current working directory)
 	directorio de trabajo actual, SE DEBE TOMAR EN CUENTA QUE -> al clonar un repositorio
-	remoto en local, por defecto/automáticamente se crea una conexión con el repositorio remoto
-	que mantiene el nombre que se usa por convención para una conexión con un repositorio
-	remoto, esta conexión usa el identificador "origin" por defecto, para comprobarlo se puede
-	correr el comando "git remote -v[erbose]" <- (excluir lo escrito en las llaves). Esto debería
-	de dar un output con una información sobre el repositorio remoto y desde dónde se hace el
-	"fetch" y a dónde se hace el "push".
-	[PENDIENTE INVESTIGAR] -> La razón por la que existen conexión remota separada para hacer
-				  "fetch" y "pull" aunque por defecto apuntan a la misma conexión
+	remoto en local, por defecto/automÃ¡ticamente se crea una conexiÃ³n con el repositorio remoto
+	que mantiene el nombre que se usa por convenciÃ³n para una conexiÃ³n con un repositorio
+	remoto, esta conexiÃ³n usa el identificador "origin" por defecto, para comprobarlo se puede
+	correr el comando "git remote -v[erbose]" <- (excluir lo escrito en las llaves). Esto deberÃ­a
+	de dar un output con una informaciÃ³n sobre el repositorio remoto y desde dÃ³nde se hace el
+	"fetch" y a dÃ³nde se hace el "push".
+	[PENDIENTE INVESTIGAR] -> La razÃ³n por la que existen conexiÃ³n remota separada para hacer
+				  "fetch" y "pull" aunque por defecto apuntan a la misma conexiÃ³n
 				  remota.
 
-NOTA: Cuando se clona un repositorio remoto a un repositorio local, en el repo clonado que está
-en local se crea automáticamente una conexión remota con el repositorio remoto, la conexión usa
-el identificador que se usa por convención, la conexión hacía el repo remoto se llama "origin".
+NOTA: Cuando se clona un repositorio remoto a un repositorio local, en el repo clonado que estÃ¡
+en local se crea automÃ¡ticamente una conexiÃ³n remota con el repositorio remoto, la conexiÃ³n usa
+el identificador que se usa por convenciÃ³n, la conexiÃ³n hacÃ­a el repo remoto se llama "origin".
 
-NOTA: No se puede usar simplemente el comando "cp" para copiar un repo local a otra ubicación en
+NOTA: No se puede usar simplemente el comando "cp" para copiar un repo local a otra ubicaciÃ³n en
 local, existe un problema con los metadatos [PENDIENTE INVESTIGAR EL PROBLEMA] y el repositorio
 no queda copiado correctamente, se puede usar el comando "scp" o "secure copy" pero al parecer
-se tendría un problema con los commits [PENDIENTE INVESTIGAR EL PROBLEMA], lo más indicando es
-usar directamente el comando "git clone" para clonar un repo local en otra ubicación local.
+se tendrÃ­a un problema con los commits [PENDIENTE INVESTIGAR EL PROBLEMA], lo mÃ¡s indicando es
+usar directamente el comando "git clone" para clonar un repo local en otra ubicaciÃ³n local.
 
 NOTA: Hacer un fork de un repositorio en github, crea un clon del repositorio del que se quiere
       hacer fork, directamente en los servidores de github, pero un fork siempre mantiene un
@@ -134,7 +134,7 @@ NOTA: Hacer un fork de un repositorio en github, crea un clon del repositorio de
 Para empujar una rama de nuestro repo local hacia el repo remoto "origin" se escribe el comando:
 	git push origin master
 	En este caso se sigue el formato de git push [nombre del repo remoto] [branch a empujar]
-En caso de que nuestro repositorio no se encuentre al día en relación al repositorio remoto, se
+En caso de que nuestro repositorio no se encuentre al dÃ­a en relaciÃ³n al repositorio remoto, se
 debe hacer lo siguiente para "tirar" los cambios del repositorio remoto a nuestro repositorio local:
 	git pull origin master
 	En este caso se sigue el formato:
