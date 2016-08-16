@@ -133,6 +133,21 @@ NOTA: Hacer un fork de un repositorio en github, crea un clon del repositorio de
       hacer fork, directamente en los servidores de github, pero un fork siempre mantiene un
       enlace al desarrollador original.
 
+NOTA IMPORTANTE: Por convención se le llama "origin" a nuestro repositorio remoto o a nuestro
+                 fork de otro repositorio, en el caso de que se hagan cambios en un fork y se
+		 quiera comparar los cambios de nuestro fork con el repo original, se agrega
+		 una conexión con el repo remoto original del que salió nuestro fork, por
+		 convención a ese repo remoto original se lo llama "upstream", de esa forma
+		 se podrían crear los cambios del clon de un fork en local, luego se actualizaría
+		 el fork con nuestros cambios haciendo un pull request, luego se podrían comparar
+		 los cambios en nuestro fork con el repositorio original "upstream" y de esa forma
+		 podríamos hacer un "fetch" a la branch master de "upstream" hacia nuestro repo local
+		 para de esa forma poder adaptar los cambios en nuestro fork "origin" con el "upstream"
+		 creando una nueva branch que sea un merge entre "origin" y "upstream", luego se
+		 podría tranquilamente mandar esa branch en un pull request a nuestro fork "origin" o
+		 al repo original "upstream" y en caso de que los colaboradores estén de acuerdo, la
+		 branch se podría tirar hacia master.
+
 Para empujar una rama de nuestro repo local hacia el repo remoto "origin" se escribe el comando:
 	git push origin master
 	En este caso se sigue el formato de git push [nombre del repo remoto] [branch a empujar]
