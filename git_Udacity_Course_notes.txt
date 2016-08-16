@@ -4,6 +4,15 @@ Instructoras - Curso Github en Udacity:
 
 -------------------------------------------------------------------------------------------------------------------
 PENDIENTES:
+	*Investigar el comando "git diff" para ver las diferencias en los archivos entre commits.
+	*Investigar cómo usar "git diff" para ver diferencias de cambios entre las áreas de trabajo git
+	 "CURRENT WORKING DIRECTORY"(que se refiere a los archivos modificados en el repositorio actualmente y
+	 que no han sido agregados a la "staging area"), "STAGING AREA"(que se refiere a los archivos modificados
+	 que se añaden a "una cola" de archivos que serán parte de el siguiente commit pero que aún no se han
+	 agregado al commit), y al área de "COMMIT"(que se refiere al último commit ya realizado en el área de
+	 trabajo). El propósito de aprender a usar git diff para comparar cambios entre las distintas áreas de
+	 trabajo en git, es de revisar y estar concientes de los cambios realizados en dichas áreas para saber
+	 cómo se debería proceder con los cambios realizados.
 	*Mirar vídeos y leer sobre branch mergin y conflictos al hacer branch merging.
 	*Aprender a lidiar con la situación expuesta anteriormente.
 	*Investigar sobre password catching, esto sirve con github, de esta forma cuando git se comunica con
@@ -41,6 +50,41 @@ Herramientas sugeridas en el curso para la creación de diagramas:
 -------------------------------------------------------------------------------------------------------------------
 
 
+Para ver las branches actuales se usa el comando:
+	git branch
+	En este caso se muestra en el output las branches del repositorio y un asterisco en la branch que
+	actualmente tendría "checkout", osea, la branch en la que se está trabajando en el momento.
+Para cambiar de branch se usa el comando:
+	git checkout [nombre de la branch]
+	En este caso se cambiaría al espacio de trabajo de la branch a la que se le hace checkout, se entraría
+	a la branch y se tendrían los cambios/commits realizados a dicha branch.
+Para ver los commits realizados con su respectiva información e ids se usa el el comando:
+	git log
+	En este caso se obtendría la información del commit y un id único para el commit.
+Para dar un vistazo a un commit anterior se usa el comando:
+	git checkout [id del commit]
+	En este caso se cambiaría al espacio de trabajo del commit elegido. NOTA: Hay que tener en cuenta un
+	problema en este caso, existe algo llamado "HEAD"[INVESTIGACIÓN PENDIENDE SOBRE ESTO] que apunta
+	al último commit realizado en una determinada branch, cuando se hace checkout a un commit anterior
+	se muestra un mensaje de advertencia de "DETACHED FROM HEAD" que significa que se está trabajando
+	en un commit que no es "HEAD" y que los cambios hechos en el commit al que se cambió podrían perderse.
+	Ej: Si se hace un "git checkout branch" los cambios realizados en el commit viejo en el que estámos
+	    haciendo checkout se pierden, porque el espacio de trabajo de cada branch siempre apunta en el
+	    último commit realizado "HEAD", se puede imaginar un caso hipotético en el que se hace checkout
+	    a un commit anterior y el estádo del espacio de trabajo pasa a ser "DETACHED HEAD", luego hacemos
+	    cambios y nos olvidamos de que estámos en "DETACHED HEAD" y por alguna razón hacemos "checkout" a
+	    la misma branch o a otra, entonces los cambios quedan descartados, porque la branch a la que se
+	    cambia siempre apunta a "HEAD", lo que se podría hacer para solucinar esto es crear una nueva
+	    branch y guardar los cambios que se han realizado en la nueva branch, esto se hace en el commit
+	    en estado "DETACHED HEAD", se escribe el commando: git checkout -b <nombre de la nueva branch>
+	    y este comando hace que se cree una nueva branch y que al mismo tiempo se entre al espacio de
+	    trabajo de la misma(el espacio de trabajo de la nueva branch es el commit en el que se esté
+	    trabajando), el comando ya mencionado es una atajo que de otra forma habría necesitado de dos
+	    comandos "git branch <nombre de la nueva branch> y git checkout <nombre de la nueva branch>"
+	    entonces el comando "git checkout -b <nombre de la nueva branch" crea la nueva branch y hace
+	    checkout hacia la brach al mismo tiempo. Finalmente se hace un commit con los archivos modificados
+	    y de esta forma los cambios no se pierden, los cambios pasan a la nueva branch a la que se tiene
+	    alcance a los cambios por medio de "HEAD".
 
 Para agregar una conexión remota con github se escriben los comandos:
 	git remote add origin [link https del repositorio creado en github]
@@ -81,6 +125,9 @@ no queda copiado correctamente, se puede usar el comando "scp" o "secure copy" p
 se tendría un problema con los commits [PENDIENTE INVESTIGAR EL PROBLEMA], lo más indicando es
 usar directamente el comando "git clone" para clonar un repo local en otra ubicación local.
 
+NOTA: Hacer un fork de un repositorio en github, crea un clon del repositorio del que se quiere
+      hacer fork, directamente en los servidores de github, pero un fork siempre mantiene un
+      enlace al desarrollador original.
 
 Para empujar una rama de nuestro repo local hacia el repo remoto "origin" se escribe el comando:
 	git push origin master
