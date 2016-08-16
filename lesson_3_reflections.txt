@@ -28,3 +28,18 @@
 5.How would you collaborate using Git or GitHub? What would be easier, and what would be harder?
   Collaboration can be done with more productivity by using git and github to keep a remote repository where a
   team of collaborators could participate and submit their changes.
+
+6.When would you want to make changes in a separate branch rather than directly into master? What benefits does
+  each approach have?
+  When collaborating with a team of developers, the only way to do a collaboration without messing directly
+  with the master branch, is to create another branch, make the changes within that branch, then, if any
+  changes were made to the master branch from the remote repository, the master branch from the remote repository
+  should be pulled into your local repository, then master should be merged to our local branch, if there are
+  any conflicts within our local branch after merging master into it, then the conflicts should be resolved,
+  finally our local branch (containing all the changes and already merged with the up-to-date master branch)
+  should be pushed to the remote repository hosted in github, then we create a pull request to master branch, if
+  all the changes are good to go and everything works properly, then the administrator of the remote repository
+  could pull your branch into master.
+  The benefits of this approach is that everything within the master branch remains stable and the features added
+  to a particular project stay within other branches until the developers fix conflicts with the up-to-date remote
+  master branch to finally pull their branch into master so that it becomes the master branch.
