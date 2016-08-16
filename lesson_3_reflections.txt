@@ -6,3 +6,15 @@
   Because we should only pull from a remote repository if we want the latests changes made, otherwise, if git
   automatically dedided to stay up-to-date it would be harder to manage our changes (commits) if there are
   already other changes made within the remote repository.
+
+3.Describe the differences between forks, clones and branches. When would you use one instead of another?
+  A fork is a clone of a github repository cloned directly to github's servers, the forked repo can be changed
+  and those changes are just avaliable for that fork, but I think it may be possible to merge branches from a
+  fork to the original repo.
+  A clone is a cloned repo from a remote server into your local machine.
+  A branch is a clone of the commit opened at the time of creating the new branch.
+  A fork is useful if someone or a group of people want to change the source code of a repo and make their own
+  version of a particular repo, so that the original repo remains without changes.
+  A branch is useful if there's something that needs to be written into the code but may result a little buggy
+  or may not work at all, so branches can be used to test and add new features, if the implementation is
+  successful, then the commits from a particular branch can be merged.
