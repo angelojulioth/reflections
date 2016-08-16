@@ -139,3 +139,34 @@ debe hacer lo siguiente para "tirar" los cambios del repositorio remoto a nuestr
 	git pull origin master
 	En este caso se sigue el formato:
 	git pull [identificador repo remoto] [branch que se desea tirar del repo remoto al local]
+
+NOTA: Cuando se ha clonado desde en repositorio remoto en local, o cuando se crea una conexión
+      desde local a un repositorio remoto, aparte del repositorio clonado en local, se guarda el
+      estado de la última interacción hecha con el repositorio remoto, con interacción me refiero
+      al último "push" o "pull", después de la interacción se guarda el estado del repo remoto, el
+      último commit guarda el identificador del repo remoto que por convención se lo nombre
+      "origin" junto al nombre de la branch, ej: origin/master. En el caso de que se llegue a modificar
+      el repositorio local y que los cambios se los haga un commit, al correr "git status", saldría
+      algo informando que el repositorio local está adelantado por un commit a "origin/master".
+
+      Puede darse el caso de que un repo local tenga un cambio al mismo tiempo que el repositorio
+      remoto, en este caso se podría usar el comando "git fetch <identificador de repo remoto>" y
+      se tirarían los cambios hechos en el repositorio remoto hacia una branch llamada
+      "origin/master", en otras palabras "<identificador/branch>, esta branch con los cambios del
+      repositorio remoto permite que se preserven los cambios en el repositorio local y que los
+      cambios conflictivos en el remoto simplemente se mantengan separados, luego se puede hacer
+      un merge en local con el "origin/master" y el "master", osea la branch que contiene los commits
+      conflictivos y que son remotos, se mezcle con la branch local para mezclar ambas en una branch.
+      De hecho el comando "git pull" realiza algo similar, es como si realizara un "git fetch origin" y
+      luego el comando "git merge master origin/master", esto es exactamente lo que git pull hace, es
+      un atajo en git que básicamente hace un fetch hace un fetch y mezcla esta version con master, osea
+      con el repo del repo local.
+      
+      En resumen "git fetch origin" actualizaría el repositorio local con todos los cambios hechos en
+      el repositorio remoto, pero ubicados en branches con el identificador de la conexión antepuesto.
+      Ej: "origin/master", "origin/branchExperimental".
+      Estas branches con los cambios "fetched" que son del repo remoto, pueden compararse con los
+      cambios que son el equivalente local de la misma branch.
+      Ej: Se podría comparar la branch master local con la master "fetched" desde el remoto de la
+      siguiente manera: "git diff origin/master master".
+      También se puede ver los logs en dichas branches de la siguiente manera "git log origin/master".
