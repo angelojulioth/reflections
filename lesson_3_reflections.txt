@@ -18,3 +18,9 @@
   A branch is useful if there's something that needs to be written into the code but may result a little buggy
   or may not work at all, so branches can be used to test and add new features, if the implementation is
   successful, then the commits from a particular branch can be merged.
+
+4.What is the benefit of having a copy of the last known state of the remote stored locally?
+  By having a "fetched" version of the latests changes from a remote repo stored locally as branches, it get's
+  easier to see the changes made that are avaliable in the remote repo compared to the ones that are local and
+  not yet avaliable for the remote, the other advantange is to be able to merge the copies of the remote branches
+  with the local branches to later push the merged version after all the merge conflicts are solved.
